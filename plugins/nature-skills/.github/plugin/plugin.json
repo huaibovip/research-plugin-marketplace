@@ -1,14 +1,20 @@
 {
-    "name": "<plugin_name>",
-    "description": "<plugin_description>",
-    "version": "<plugin_version>",
+    "name": "nature-skills",
+    "description": "A growing collection of academic workflow bundles for producing work at Nature-journal standard.",
+    "version": "9186222",
     "author": {
-        "name": "<author_name>"
+        "name": "Yuan1z0825"
     },
-    "homepage": "<plugin_homepage>",
-    "repository": "<plugin_repository>",
-    "license": "<plugin_license>",
+    "homepage": "https://github.com/Yuan1z0825/nature-skills",
+    "repository": "https://github.com/Yuan1z0825/nature-skills",
+    "license": "MIT",
     "keywords": [
-        "<plugin_keywords>"
+        "nature",
+        "academic",
+        "science",
+        "figure",
+        "writing",
+        "citation",
+        "publication"
     ]
 }

@@ -1,14 +1,22 @@
 {
-    "name": "<plugin_name>",
-    "description": "<plugin_description>",
-    "version": "<plugin_version>",
+    "name": "academic-research-suite",
+    "description": "Production-grade academic research pipeline (Codex): research → write → review → revise → finalize.",
+    "version": "0.1.20",
     "author": {
-        "name": "<author_name>"
+        "name": "Cheng-I Wu"
     },
-    "homepage": "<plugin_homepage>",
-    "repository": "<plugin_repository>",
-    "license": "<plugin_license>",
+    "homepage": "https://github.com/Imbad0202/academic-research-skills-codex",
+    "repository": "https://github.com/Imbad0202/academic-research-skills-codex",
+    "license": "CC-BY-NC-4.0",
     "keywords": [
-        "<plugin_keywords>"
+        "academic",
+        "research",
+        "writing",
+        "review",
+        "deep-research",
+        "literature-review",
+        "systematic-review",
+        "peer-review",
+        "scholarly-publishing"
     ]
 }
