@@ -96,9 +96,13 @@ def convert_marketplace(
     for plugin in data.get("plugins", []):
         source = plugin["source"]
         if isinstance(source, str):
+            url = REPO_URL
             plugin_dir = source
+            ref = REF
         elif isinstance(source, dict):
+            url = source.get(url_key, REPO_URL)
             plugin_dir = source["path"]
+            ref = source.get("ref", REF)
         else:
             raise ValueError(f"Invalid source type: {type(source)}")
 
@@ -107,9 +111,9 @@ def convert_marketplace(
 
         plugin["source"] = {
             "source": agent_type,
-            url_key: REPO_URL,
+            url_key: url,
             "path": plugin_dir,
-            "ref": REF,
+            "ref": ref,
         }
 
     with open(output_file, "w", encoding="utf-8") as f:
@@ -187,4 +191,4 @@ if __name__ == "__main__":
     )
 
     readme_file = TMP_REPO_DIR / "README.md"
-    convert_readme(readme_file, Path("README.md"), 'meta')
+    convert_readme(readme_file, Path("README.md"), 'git')

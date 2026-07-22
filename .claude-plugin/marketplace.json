@@ -104,7 +104,7 @@
             },
             "source": {
                 "source": "git-subdir",
-                "url": "https://github.com/huaibovip/research-marketplace.git",
+                "url": "https://github.com/openai/codex-plugin-cc.git",
                 "path": "plugins/codex",
                 "ref": "main"
             },

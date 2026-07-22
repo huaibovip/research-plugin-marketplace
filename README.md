@@ -9,20 +9,20 @@ Add this marketplace to Agent (`Claude Code` / `Codex` / `Copilot`):
 
 ```bash
 # claude / copilot
-/plugin marketplace add huaibovip/research-marketplace@meta
+/plugin marketplace add huaibovip/research-marketplace@git
 
 # codex
-codex plugin marketplace add huaibovip/research-marketplace@meta
+codex plugin marketplace add huaibovip/research-marketplace@git
 ```
 
 or
 
 ```bash
 # claude / copilot (ssh)
-/plugin marketplace add git@github.com:huaibovip/research-marketplace.git#meta
+/plugin marketplace add git@github.com:huaibovip/research-marketplace.git#git
 
 # codex (ssh)
-codex plugin marketplace add git@github.com:huaibovip/research-marketplace.git#meta
+codex plugin marketplace add git@github.com:huaibovip/research-marketplace.git#git
 ```
 
 
@@ -108,6 +108,26 @@ codex plugin add nature-skills@research-marketplace
 codex plugin add zotero-cli@research-marketplace
 ```
 
+### [Papper-Spine](https://github.com/WUBING2023/PaperSpine)
+
+**Description:** Contribution-first, reviewer-aware academic paper and report writing system
+
+```bash
+# claude / coplit
+/plugin install paper-spine@research-marketplace
+
+# codex
+codex plugin add paper-spine@research-marketplace
+```
+
+### [Codex-Plugin-CC (Claude only)](https://github.com/openai/codex-plugin-cc)
+
+**Description:** Use Codex from Claude Code to review code or delegate tasks
+
+```bash
+# claude
+/plugin install codex@research-marketplace
+```
 ---
 
 ## Marketplace Structure
