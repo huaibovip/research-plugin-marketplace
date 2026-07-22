@@ -1,1 +1,14 @@
-../../.claude-plugin/plugin.json
+{
+    "name": "<plugin_name>",
+    "description": "<plugin_description>",
+    "version": "<plugin_version>",
+    "author": {
+        "name": "<author_name>"
+    },
+    "homepage": "<plugin_homepage>",
+    "repository": "<plugin_repository>",
+    "license": "<plugin_license>",
+    "keywords": [
+        "<plugin_keywords>"
+    ]
+}
