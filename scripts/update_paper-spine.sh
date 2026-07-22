@@ -31,8 +31,8 @@ plugin_import_layout() {
   mp_move_path "$source_dir/LICENSE" "$plugin_dir/LICENSE"
   mp_move_path "$source_dir/.gitignore" "$plugin_dir/.gitignore"
 
-  rm -rf "$plugin_dir/codex/skills"
-  ln -s ../claude/skills "$plugin_dir/codex/skills"
+  # rm -rf "$plugin_dir/codex/skills"
+  # ln -s ../claude/skills "$plugin_dir/codex/skills"
 }
 
 post_update() {

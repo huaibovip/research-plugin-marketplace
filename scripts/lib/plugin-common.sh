@@ -236,11 +236,14 @@ mp_restore_marketplace_metadata() {
     "$source_dir/.claude-plugin/plugin.json" \
     "$target_dir/.claude-plugin/plugin.json"
 
-  mkdir -p "$target_dir/.codex-plugin"
-  ln -sfn ../.claude-plugin/plugin.json "$target_dir/.codex-plugin/plugin.json"
+  mp_copy_path "$source_dir/.claude-plugin/plugin.json" "$target_dir/.codex-plugin/plugin.json"
+  mp_copy_path "$source_dir/.claude-plugin/plugin.json" "$target_dir/.github/plugin/plugin.json"
 
-  mkdir -p "$target_dir/.github/plugin"
-  ln -sfn ../../.claude-plugin/plugin.json "$target_dir/.github/plugin/plugin.json"
+  # mkdir -p "$target_dir/.codex-plugin"
+  # ln -sfn ../.claude-plugin/plugin.json "$target_dir/.codex-plugin/plugin.json"
+
+  # mkdir -p "$target_dir/.github/plugin"
+  # ln -sfn ../../.claude-plugin/plugin.json "$target_dir/.github/plugin/plugin.json"
 
   cp -a "$source_dir/.gitignore" "$target_dir/.gitignore"
 
